@@ -2,214 +2,155 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Напоминание о стоматологических льготах CorEnroll</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julia Mailchimp Emails</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f6f4;
+      --card: #ffffff;
+      --ink: #1f2523;
+      --muted: #66706c;
+      --line: #dfe5e1;
+      --accent: #235f4f;
+      --accent-soft: #e7f1ed;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.55;
+    }
+
+    main {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    header {
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 34px;
+      line-height: 1.15;
+      font-weight: 700;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .item {
+      display: grid;
+      gap: 14px;
+      padding: 22px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.3;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 42px;
+      padding: 0 16px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      background: var(--accent);
+      color: #ffffff;
+    }
+
+    .button.secondary {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    .note {
+      margin-top: 28px;
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #ffffff;
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
 </head>
-<body style="margin:0; padding:0; font-family: Arial, Helvetica, sans-serif; background-color:#f5f5f5;">
+<body>
+  <main>
+    <header>
+      <h1>Julia Mailchimp Emails</h1>
+      <p>Три HTML-письма для Mailchimp и три английские версии для GitHub Pages.</p>
+    </header>
 
-<table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color:#f5f5f5; padding:20px 0;">
-  <tr>
-    <td align="center">
-      <table border="0" cellspacing="0" cellpadding="0" width="100%" style="max-width:600px; background-color:#ffffff;">
-        <tr>
-          <td style="padding:24px; border-radius:8px; font-size:16px; line-height:1.6; color:#222222; font-family:Arial, Helvetica, sans-serif;">
+    <section class="grid" aria-label="Email files">
+      <article class="item">
+        <h2>1. Clients NLG</h2>
+        <p>Письмо для текущих клиентов о вебинаре по финансовой и юридической защите семьи.</p>
+        <div class="links">
+          <a class="button" href="emails/clients-nlg.html">Mailchimp HTML</a>
+          <a class="button secondary" href="en/clients-nlg.html">EN Version</a>
+        </div>
+      </article>
 
+      <article class="item">
+        <h2>2. Previous Webinar Attendees / CRM Prospects</h2>
+        <p>Письмо для участников прошлых мероприятий и потенциальных клиентов из CRM.</p>
+        <div class="links">
+          <a class="button" href="emails/previous-webinar-attendees.html">Mailchimp HTML</a>
+          <a class="button secondary" href="en/previous-webinar-attendees.html">EN Version</a>
+        </div>
+      </article>
 
-            <p style="margin:0 0 16px 0;">
-              Здравствуйте!
-            </p>
+      <article class="item">
+        <h2>3. Dental Clients</h2>
+        <p>Письмо для стоматологических клиентов с приглашением на вебинар и ссылкой на NoWaitDental.</p>
+        <div class="links">
+          <a class="button" href="emails/dental-clients.html">Mailchimp HTML</a>
+          <a class="button secondary" href="en/dental-clients.html">EN Version</a>
+        </div>
+      </article>
+    </section>
 
-            <p style="margin:0 0 16px 0;">
-              Благодарим вас за то, что являетесь частью сообщества CorEnroll. Я очень ценю ваше доверие и сотрудничество и надеюсь, что ваш опыт использования стоматологического плана был комфортным и полезным.
-            </p>
-
-            <p style="margin:0 0 16px 0;">
-              По мере того как год подходит к концу, хочу мягко напомнить: <strong>1 января ваши стоматологические льготы будут обновлены</strong>. 
-              Если у вас ещё остались неиспользованные льготы по MetLife или Delta Dental, пожалуйста, подумайте о том, чтобы посетить стоматолога, чтобы ничего не пропало впустую.
-            </p>
-
-            <p style="margin:0 0 16px 0;">
-              Вы можете проверить оставшийся баланс, зайдя в личный кабинет на 
-              <a href="https://www.metlife.com" style="color:#0066cc; text-decoration:none;">MetLife.com</a> 
-              или 
-              <a href="https://www.deltadentalct.com" style="color:#0066cc; text-decoration:none;">DeltaDentalCT.com</a>.
-            </p>
-
-            <p style="margin:0 0 16px 0;">
-              Для вашего удобства моя команда создала информационную страницу с полезными ссылками и материалами по вашему стоматологическому покрытию:
-            </p>
-
-            <p style="margin:0 0 24px 0;">
-              👉 <a href="https://dental.juliabarinova.com" style="color:#0066cc; text-decoration:none;">dental.juliabarinova.com</a><br/>
-              Её можно отправить друзьям, членам семьи или прямо в кабинет вашему стоматологу.
-            </p>
-
-            <!-- METLIFE UPDATE -->
-            <h2 style="font-size:18px; margin:0 0 12px 0;">
-              ⚠️ Обновление по MetLife
-            </h2>
-
-            <p style="margin:0 0 12px 0;">
-              Начиная с 1 января MetLife отменяет льготу <strong>No Waiting Period</strong> для новых клиентов.
-            </p>
-
-            <p style="margin:0 0 12px 0;">
-              <strong>Что это означает:</strong><br/>
-              Любой, кто будет присоединяться к плану после 1 января и кому нужны импланты, коронки, лечение корневых каналов или другие крупные стоматологические процедуры, 
-              столкнётся с <strong>12-месячным периодом ожидания</strong> до начала покрытия по этим услугам.
-            </p>
-
-            <p style="margin:0 0 20px 0;">
-              Если вы или кто-то из ваших знакомых рассматривает возможность оформить план по текущим условиям, до вступления новых правил, вы можете поделиться этой ссылкой:<br/>
-              👉 <a href="https://dental.juliabarinova.com" style="color:#0066cc; text-decoration:none;">dental.juliabarinova.com</a>
-            </p>
-
-            <!-- ADDITIONAL BENEFITS -->
-            <h2 style="font-size:18px; margin:0 0 12px 0;">
-              🌟 Дополнительные льготы через CorEnroll
-            </h2>
-
-            <p style="margin:0 0 12px 0;">
-              Как участник программы CorEnroll, вы также имеете доступ к ценным групповым продуктам, которых нет на обычном индивидуальном рынке, включая:
-            </p>
-
-            <ul style="margin:0 0 20px 20px; padding:0;">
-              <li style="margin-bottom:6px;">программы по коррекции зрения (vision plans);</li>
-              <li style="margin-bottom:6px;">медицинские PPO-планы;</li>
-              <li style="margin-bottom:6px;">страхование критических заболеваний (critical illness coverage);</li>
-              <li style="margin-bottom:6px;">страхование жизни с гарантированной выдачей (guaranteed-issue life insurance);</li>
-              <li style="margin-bottom:6px;">программы страхования от несчастных случаев (accidental injury plans);</li>
-              <li style="margin-bottom:6px;">другие дополнительные (supplemental) групповые льготы.</li>
-            </ul>
-
-            <p style="margin:0 0 20px 0;">
-              Пожалуйста, уделите немного времени, чтобы просмотреть доступные опции в вашем приложении CorEnroll и оценить, какие решения лучше всего соответствуют вашим потребностям. 
-              Если вы захотите что-то добавить, просто положите выбранный продукт в корзину и продолжите оформление — ваш профиль уже сохранён для удобства.
-            </p>
-
-            <!-- ABOUT JULIA -->
-            <h2 style="font-size:18px; margin:0 0 12px 0;">
-              О Джулии
-            </h2>
-
-            <p style="margin:0 0 20px 0;">
-              Я — опытный и внимательный страховой консультант с более чем 20-летним стажем помощи людям и семьям в защите того, что для них важнее всего. 
-              Если вам когда-либо потребуется поддержка или консультация, я всегда готова помочь.
-            </p>
-
-            <!-- ADDITIONAL SERVICES -->
-             <!-- ADDITIONAL SERVICES WITH LINKS -->
-             <h2 style="font-size:18px; margin:0 0 12px 0;">
-                Дополнительные услуги, которые я предлагаю
-              </h2>
-  
-              <p style="margin:0 0 8px 0;">
-                <em>(Вы можете выбрать любые направления, о которых хотели бы узнать больше — клик по строке переведёт вас на запись в календарь)</em>
-              </p>
-  
-              <!-- LIFE INSURANCE -->
-              <p style="margin:0 0 6px 0;">
-                <a href="https://calendly.com/jbarinova?utm_source=corenroll&amp;utm_medium=web&amp;utm_campaign=yearend_reminder&amp;utm_content=life_insurance_ru"
-                   style="color:#222222; text-decoration:none;">
-                  ☐ <strong>Страхование жизни</strong><br/>
-                  <span style="font-size:14px; color:#555555;">
-                    (с «живыми» льготами — Living Benefits — на критические, хронические и терминальные заболевания)
-                  </span>
-                </a>
-              </p>
-  
-              <!-- DISABILITY PROTECTION -->
-              <p style="margin:0 0 6px 0;">
-                <a href="https://calendly.com/jbarinova?utm_source=corenroll&amp;utm_medium=web&amp;utm_campaign=yearend_reminder&amp;utm_content=disability_protection_ru"
-                   style="color:#222222; text-decoration:none;">
-                  ☐ <strong>Страхование от потери трудоспособности</strong><br/>
-                  <span style="font-size:14px; color:#555555;">
-                    (защита вашего дохода, если болезнь или травма помешают вам работать)
-                  </span>
-                </a>
-              </p>
-  
-              <!-- LONG-TERM CARE -->
-              <p style="margin:0 0 6px 0;">
-                <a href="https://calendly.com/jbarinova?utm_source=corenroll&amp;utm_medium=web&amp;utm_campaign=yearend_reminder&amp;utm_content=long_term_care_ru"
-                   style="color:#222222; text-decoration:none;">
-                  ☐ <strong>Планирование долгосрочного ухода</strong><br/>
-                  <span style="font-size:14px; color:#555555;">
-                    (помощь в покрытии возможных затрат на уход в более позднем возрасте)
-                  </span>
-                </a>
-              </p>
-  
-              <!-- INSURANCE REVIEW -->
-              <p style="margin:0 0 6px 0;">
-                <a href="https://calendly.com/jbarinova?utm_source=corenroll&amp;utm_medium=web&amp;utm_campaign=yearend_reminder&amp;utm_content=insurance_review_ru"
-                   style="color:#222222; text-decoration:none;">
-                  ☐ <strong>Общая проверка вашего страхового портфеля</strong><br/>
-                  <span style="font-size:14px; color:#555555;">
-                    (анализ существующих полисов и рекомендации по их оптимизации)
-                  </span>
-                </a>
-              </p>
-  
-              <!-- CALL ME -->
-              <p style="margin:0 0 20px 0;">
-                <a href="https://calendly.com/jbarinova?utm_source=corenroll&amp;utm_medium=web&amp;utm_campaign=yearend_reminder&amp;utm_content=call_me_ru"
-                   style="color:#222222; text-decoration:none;">
-                  ☐ <strong>Попросить члена команды связаться со мной и назначить разговор</strong><br/>
-                  <span style="font-size:14px; color:#555555;">
-                    (мы свяжемся с вами, используя указанные в профиле телефон и email)
-                  </span>
-                </a>
-              </p>
-
-            <!-- LET'S CONNECT -->
-            <h2 style="font-size:18px; margin:0 0 12px 0;">
-              Давайте будем на связи
-            </h2>
-
-            <p style="margin:0 0 8px 0;">
-              Записаться на консультацию:<br/>
-              <a href="https://calendly.com/jbarinova" style="color:#0066cc; text-decoration:none;">https://calendly.com/jbarinova</a>
-            </p>
-
-            <p style="margin:0 0 20px 0;">
-              Сохранить мою цифровую визитку:<br/>
-              <a href="https://hihello.com/hi/jbarinova" style="color:#0066cc; text-decoration:none;">https://hihello.com/hi/jbarinova</a>
-            </p>
-
-            <p style="margin:0 0 16px 0;">
-              Я искренне ценю ваше доверие. Если у вас появятся вопросы, сомнения или запросы, пожалуйста, не стесняйтесь обращаться ко мне в любое время.
-            </p>
-
-            <p style="margin:0 0 16px 0;">
-              Желаю вам и вашей семье тёплого, радостного и здорового праздничного сезона!
-            </p>
-
-            <!-- SIGNATURE -->
-            <p style="margin:0 0 4px 0;">
-              С уважением,
-            </p>
-            <p style="margin:0 0 12px 0;">
-              <strong>Julia Barinova, MBA</strong><br/>
-              Licensed Insurance Advisor
-            </p>
-
-            <p style="margin:0 0 4px 0;">
-              📞 <a href="tel:+19177250435" style="color:#0066cc; text-decoration:none;">917-725-0435</a><br/>
-              📧 <a href="mailto:julia@juliabarinova.com" style="color:#0066cc; text-decoration:none;">julia@juliabarinova.com</a>
-            </p>
-
-            <p style="margin:0;">
-              🌐 <a href="https://dental.juliabarinova.com" style="color:#0066cc; text-decoration:none;">dental.juliabarinova.com</a> | 
-              <a href="https://juliabarinova.com" style="color:#0066cc; text-decoration:none;">juliabarinova.com</a>
-            </p>
-
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-
+    <p class="note">
+      В исходных письмах регистрационная ссылка оставлена как placeholder. В HTML она сохранена как текст
+      "(вставьте ссылку)" / "[Insert registration link]", чтобы перед отправкой ее можно было заменить в Mailchimp.
+    </p>
+  </main>
 </body>
 </html>
