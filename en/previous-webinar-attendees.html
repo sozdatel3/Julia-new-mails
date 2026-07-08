@@ -21,7 +21,7 @@
                 Free Webinar on Family Protection in the U.S.
               </h1>
 
-              <p style="margin:0 0 16px 0;">Hello {name},</p>
+              <p style="margin:0 0 16px 0;">Hello<span data-recipient-name></span>,</p>
 
               <p style="margin:0 0 16px 0;">
                 We met through one of my previous seminars, consultations, events, or educational projects. Thank you for staying connected.
@@ -92,7 +92,7 @@
               </p>
 
               <p style="margin:0 0 16px 0;">
-                I will be very happy to see you at the webinar. Please share this invitation with friends, relatives, or colleagues who may benefit from this information.
+                We will be very happy to see you at the webinar. Please share this invitation with friends, relatives, or colleagues who may benefit from this information.
               </p>
 
               <p style="margin:0 0 5px 0;">Warm regards,</p>
@@ -119,5 +119,12 @@
       </td>
     </tr>
   </table>
+  <script>
+    (function () {
+      var name = new URLSearchParams(window.location.search).get('fname');
+      var target = document.querySelector('[data-recipient-name]');
+      if (target && name) target.textContent = ' ' + name;
+    })();
+  </script>
 </body>
 </html>

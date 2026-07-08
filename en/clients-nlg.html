@@ -21,7 +21,7 @@
                 Your Children. Your Money. Your Peace of Mind.
               </h1>
 
-              <p style="margin:0 0 16px 0;">Hello {name},</p>
+              <p style="margin:0 0 16px 0;">Hello<span data-recipient-name></span>,</p>
 
               <p style="margin:0 0 16px 0;">
                 First, I want to sincerely thank you for being my clients. I truly appreciate your trust and the opportunity to help you protect yourself and your family.
@@ -95,7 +95,7 @@
               </p>
 
               <p style="margin:0 0 16px 0;">
-                I will be very happy to see you at the webinar. If you know friends or relatives who may benefit from this information, please share this invitation with them.
+                We will be very happy to see you at the webinar. If you know friends or relatives who may benefit from this information, please share this invitation with them.
               </p>
 
               <p style="margin:0 0 16px 0;">
@@ -126,5 +126,12 @@
       </td>
     </tr>
   </table>
+  <script>
+    (function () {
+      var name = new URLSearchParams(window.location.search).get('fname');
+      var target = document.querySelector('[data-recipient-name]');
+      if (target && name) target.textContent = ' ' + name;
+    })();
+  </script>
 </body>
 </html>

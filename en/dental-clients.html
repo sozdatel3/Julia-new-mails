@@ -21,7 +21,7 @@
                 For Dental Insurance Clients
               </h1>
 
-              <p style="margin:0 0 16px 0;">Hello {name},</p>
+              <p style="margin:0 0 16px 0;">Hello<span data-recipient-name></span>,</p>
 
               <p style="margin:0 0 16px 0;">
                 Many of you know me as the advisor who helped you find the right dental insurance. Thank you for your trust and your business!
@@ -98,7 +98,7 @@
               </p>
 
               <p style="margin:0 0 16px 0;">
-                I hope you will be able to join us. Please feel free to share this invitation with family members, friends, or anyone who may benefit from this information.
+                We hope you will be able to join us. Please feel free to share this invitation with family members, friends, or anyone who may benefit from this information.
               </p>
 
               <p style="margin:0 0 5px 0;">Warm regards,</p>
@@ -125,5 +125,12 @@
       </td>
     </tr>
   </table>
+  <script>
+    (function () {
+      var name = new URLSearchParams(window.location.search).get('fname');
+      var target = document.querySelector('[data-recipient-name]');
+      if (target && name) target.textContent = ' ' + name;
+    })();
+  </script>
 </body>
 </html>
